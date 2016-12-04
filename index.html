@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Chat</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+</head>
+
+<body>
+    <div id="content">
+        <div id="login">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="login-field">Nickname</label>
+                    <input id="login-field" class="form-control" placeholder="Nickname">
+                </div>
+                <div id="send-login" class="btn btn-default">Login</div>
+            </form>
+        </div>
+        <div id="chat">
+            <div id="chat-container">
+                <div id="chat-log-wrapper" class="col-md-10 col-sm-8">
+                    <div id="chat-log"></div>
+                </div>
+                <div id="userlist" class="col-md-2 col-sm-4"></div>
+            </div>
+            <div id="message">
+                <div>
+                    <div class="input-group">
+                        <input id="message-box" type="text" class="form-control">
+                        <span class="input-group-btn">
+                            <button id="send-message" class="btn btn-secondary" type="button">Send!</button>
+                            <button id="send-file" class="btn btn-secondary" type="button">Browse file</button>
+                        </span>
+                        <input type="file" style="display: none" />
+                    </div>
+                </div>
+                <div id="attach"></div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="js/chat.js"></script>
+    <script type="text/javascript" src="js/p2p.js"></script>
+</body>
+
+</html>

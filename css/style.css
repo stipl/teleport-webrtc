@@ -1,0 +1,67 @@
+html,
+body {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000;
+    background-color: #fff;
+    height: 100%;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+}
+
+#chat {
+    height: 100%;
+}
+
+#userlist {
+    padding: 10px;
+}
+
+#login {
+    padding: 40px;
+    text-align: center;
+}
+
+#message {
+    height: 60px;
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    background-color: white;
+}
+
+#chat-container {
+    height: inherit;
+}
+
+#chat-log-wrapper {
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+#chat-log {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.browse-button { 
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.browse-button input[type="button"] { 
+    cursor: pointer;
+}
+.browse-button input[type="file"] { 
+    width: 150px; 
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
